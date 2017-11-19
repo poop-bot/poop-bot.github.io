@@ -30,8 +30,60 @@
 }
 .top-link:hover {
   background: #23272A;
+  border-bottom: 0.5vh solid #23272A;
 }
 .top-link.active {
+  border-bottom: 0.5vh solid #7289DA;
+}
+#content {
+  width: 100vw;
+  height: 90vh;
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  background: #23272A;
+}
+#logoCircle {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  background: url("logo.png") center / cover no-repeat #2C2F33;
+  width: 25vh;
+  height: 25vh;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+#logoText {
+  position: absolute;
+  top: calc(32.5%);
+  left: 50%;
+  color: #ffffff;
+  font-size: 10vh;
+  text-align: center;
+  font-family: Arial;
+  transform: translateX(-50%);
+}
+#addBtn {
+  font-family: Arial;
+  background: #2C2F33;
+  color: #7289DA;
+  padding: 2vh;
+  font-size: 2.5vh;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 65vh;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 1.5vh;
+  border-bottom: 0.5vh solid #2C2F33;
+}
+#addBtn:hover {
+  border-bottom: 0.5vh solid #7289DA;
+}
+#addBtn:active {
+  background: #7289DA;
+  color: #2C2F33;
   border-bottom: 0.5vh solid #7289DA;
 }
 </style>
@@ -42,7 +94,9 @@
   <a href="about.html" class="top-link second">About</a>
 </div>
 <div id="content">
-
+<div id="logoCircle"></div>
+<p id="logoText">Poop Bot</p>
+<button id="addBtn" onclick="window.open('https://discordapp.com/oauth2/authorize?client_id=381409327673638923&scope=bot&permissions=8', '_blank');">Add Poop Bot To Your Server</button>
 </div>
 </body>
 </html>
