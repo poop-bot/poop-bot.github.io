@@ -77,6 +77,11 @@ a {
 #command > h1 {
   font-size: 5vh;
 }
+#command > h3 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
 #commandOverlay {
   background: rgba(0,0,0,0.3);
   display: none;
@@ -120,7 +125,7 @@ a {
     var removerole = "<h1>!removerole</h1><p>The !removerole command removes a role from a member. <strong>ROLE MUST HAVE 'ANYONE CAN MENTION' TURNED ON</strong>.<br><br>Usage: !removerole <@member> <@role>";
     var share = "<h1>!share</h1><p>The !share command sends links to the channel the command is on. This command sends a link to add the bot to another server and to visit the website.<br><br>Usage: !share";
     function command(cmd) {
-      document.getElementById("command").innerHTML = this[cmd] + "<br><br><br>Key: &lt;required&gt; [optional]</p>";
+      document.getElementById("command").innerHTML = this[cmd] + "</p><h3>Key: &lt;required&gt; [optional]</h3>";
       document.getElementById("command").style.display = "block";
       document.getElementById("commandOverlay").style.display = "block";
     }
