@@ -10,6 +10,7 @@
   width: 100vw;
   height: 10vh;
   background: #2C2F33;
+  z-index: 9;
 }
 .top-link {
   position: absolute;
@@ -83,6 +84,15 @@ a {
   height: 100vh;
   z-index: 10;
 }
+#commandClose {
+  font-family: Arial;
+  font-size: 1vh;
+  color: white;
+  position: fixed;
+  top: 60vh;
+  right: 60vw;
+  z-index: 12;
+}
 </style>
 </head>
 <body>
@@ -104,7 +114,7 @@ a {
 <br><br>!share - Get links to Poop Bot. Usage - !share
   <div id="commandOverlay" onclick="commandClose()"></div>
   <div id="command"></div>
-  <div id="commandClose"></div>
+  <div id="commandClose" onclick="commandClose()">X</div>
 </div>
   <script>
     var help = "<h1>!help</h1><p>The !help command is used to get info on commands. It gives a link to this page.<br>Usage: !help";
