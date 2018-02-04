@@ -108,9 +108,14 @@ a {
 </div>
   <script>
     var help = "<h1>!help</h1><p>The !help command is used to get info on commands. It gives a link to this page.<br>Usage: !help";
-    var kick = "<h1>!kick</h1><p>The !kick command kicks a member from the server. The member <strong>will</strong> be able to join again if they have an invite link.<br>Usage: !kick <@member> <@role>";
-    var ban = "<h1>!ban</h1><p>The !ban command bans a member from the server. The member <strong>will not</strong> be able to join again if they have an invite link.<br>Usage: !ban <@member> <@role>";
-    var meme = "<h1>!meme</h1><p>!meme sends a meme to the channel the command is on. This command can only be used <strong>once a minute</strong>.<br>Usage: !meme";
+    var kick = "<h1>!kick</h1><p>The !kick command kicks a member from the server. The member <strong>WILL</strong> be able to join again if they have an invite link.<br>Usage: !kick <@member> <reason>";
+    var ban = "<h1>!ban</h1><p>The !ban command bans a member from the server. The member <strong>WILL NOT</strong> be able to join again if they have an invite link.<br>Usage: !ban <@member> <reason>";
+    var meme = "<h1>!meme</h1><p>!meme sends a meme to the channel the command is on. This command can only be used <strong>ONCE A MINUTE</strong>.<br>Usage: !meme";
+    var rps = "<h1>!rps</h1><p><br>Usage: !rps <choice>";
+    var wish = "<h1>!wish</h1><p><br>Usage: !wish <@member> <wish>";
+    var addrole = "<h1>!addrole</h1><p><br>Usage: !addrole <@member> <@role>";
+    var removerole = "<h1>!removerole</h1><p><br>Usage: !removerole <@member> <@role>";
+    var share = "<h1>!share</h1><p>The !share command sends links to the channel the command is on. This command sends a link to add the bot to another server and to visit the website.<br>Usage: !share";
     function command(cmd) {
       document.getElementById("command").innerHTML = this[cmd] + "<br><br><br><p>Key: &lt;required&gt; [optional]";
       document.getElementById("command").style.display = "block";
