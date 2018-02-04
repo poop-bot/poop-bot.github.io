@@ -92,7 +92,7 @@ a {
   <script>
     var help = "<h1>!help</h1><p>The !help command is used to get info on commands. It gives a link to this page.<br>Usage: !help";
     function command(cmd) {
-      if(cmd == 'help') {
+      if(cmd === 'help') {
         document.getElementById("command").innerHTML = help;
         document.getElementById("command").style.display = "block";
         document.getElementById("command").style.opacity = "1";
