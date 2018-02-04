@@ -66,6 +66,7 @@ a {
   position: fixed;
   z-index: 11;
   display: none;
+  opacity: 0;
 }
 </style>
 </head>
@@ -94,6 +95,7 @@ a {
       if(cmd == 'help') {
         document.getElementById("command").innerHTML = help;
         document.getElementById("command").style.display = "block";
+        document.getElementById("command").style.opacity = "1";
       }
     }
   </script>
