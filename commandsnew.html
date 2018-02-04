@@ -77,7 +77,7 @@ a {
 </div>
 <div id="content">
 <h1>Command Help</h1>
-  <a onclick="command('help')">!help - Get Help On Commands. Usage - !help</a>
+  <a onclick="command('help')">!help</a>
 <br><br>!kick - Kick members from the server. Usage - !kick @<i>member reason</i>
 <br><br>!ban - Ban members from the server. Usage - !ban @<i>member reason</i>
 <br><br>!meme - Get a random meme. Usage - !meme
@@ -91,7 +91,7 @@ a {
   <script>
     var help = "<h1>!help</h1><p>The !help command is used to get info on commands. It gives a link to this page.<br>Usage: !help";
     function command(cmd) {
-      if(cmd == "help") {
+      if(cmd == 'help') {
         document.getElementById("command").innerHTML = help;
         document.getElementById("command").style.display = "block";
       }
