@@ -99,9 +99,9 @@ a {
     var kick = "<h1>!kick</h1><p>The !kick command kicks a member from the server. The member <strong>will</strong> be able to join again if they have an invite link.<br>Usage: !kick <@member> <@role>";
     function command(cmd) {
       if(cmd === 'help')
-        document.getElementById("command").innerHTML = help + "<br><br><br><p>Key: <required> [optional]";
+        document.getElementById("command").innerHTML = help + "<br><br><br><p>Key: &lt;required&gt; [optional]";
       if(cmd === 'kick')
-        document.getElementById("command").innerHTML = kick + "<br><br><br><p>Key: <required> [optional]";
+        document.getElementById("command").innerHTML = kick + "<br><br><br><p>Key: &lt;required&gt; [optional]";
       document.getElementById("command").style.display = "block";
     }
   </script>
