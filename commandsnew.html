@@ -1,1 +1,80 @@
-
+<html>
+<head>
+<link rel="shortcut icon" href="logonobg.png">
+<title>Poop Bot | Commands</title>
+<style>
+#top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 10vh;
+  background: #2C2F33;
+}
+.top-link {
+  position: absolute;
+  top: 0;
+  height: 6vh;
+  color: #ffffff;
+  padding-top: 3.5vh;
+  font-size: 3vh;
+  text-align: center;
+  font-family: Arial;
+  text-decoration: none;
+}
+.top-link.first {
+  left: 0;
+  width: 15vh;
+}
+.top-link.second {
+  left: 15vh;
+  width: 15vh;
+}
+.top-link.third {
+  left: 30vh;
+  width: 20vh;
+}
+.top-link:hover {
+  background: #23272A;
+  border-bottom: 0.5vh solid #23272A;
+}
+.top-link.active {
+  border-bottom: 0.5vh solid #7289DA;
+}
+#content {
+  width: calc(100vw - 4vh);
+  height: 86vh;
+  padding: 2vh;
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  background: #23272A;
+  color: #ffffff;
+  font-family: Arial;
+  overflow-y: auto;
+}
+a {
+  color: #ffffff;
+}
+</style>
+</head>
+<body>
+<div id="top">
+  <a href="./" class="top-link first">Home</a>
+  <a href="about" class="top-link second">About</a>
+  <a href="commands" class="top-link third active">Commands</a>
+</div>
+<div id="content">
+<h1>Command Help</h1>
+<p>!help - Get Help On Commands. Usage - !help
+<br><br>!kick - Kick members from the server. Usage - !kick @<i>member reason</i>
+<br><br>!ban - Ban members from the server. Usage - !ban @<i>member reason</i>
+<br><br>!meme - Get a random meme. Usage - !meme
+<br><br>!rps - Play "Rock, Paper, Scissors" with me. Usage - !rps <i>choice ("r", "p" or "s")</i>
+<br><br>!wish - Wish a member something. Usage - !wish @<i>member wish</i>
+<br><br>!addrole - Add a role to a member. Usage - !addrole @<i>member</i> @<i>role</i>
+<br><br>!removerole - Remove a role from a member. Usage - !removerole @<i>member</i> @<i>role</i>
+<br><br>!share - Get links to Poop Bot. Usage - !share
+</div>
+</body>
+</html>
