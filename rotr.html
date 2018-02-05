@@ -29,12 +29,36 @@
   top: 0vh;
   left: 0vw;
 }
+#addBtn {
+  font-family: Arial;
+  background: #2C2F33;
+  color: #7289DA;
+  padding: 2vh;
+  font-size: 2.5vh;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 65vh;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 1.5vh;
+  border-bottom: 0.5vh solid #2C2F33;
+}
+#addBtn:hover {
+  border-bottom: 0.5vh solid #7289DA;
+}
+#addBtn:active {
+  background: #7289DA;
+  color: #2C2F33;
+  border-bottom: 0.5vh solid #7289DA;
+}
 </style>
 </head>
 <body>
 <div id="bg"></div>
 <div id="content">
   <h1>Riddle Of The Rocks</h1>
+  <button id="addBtn" onclick="window.open('https://discordapp.com/oauth2/authorize?client_id=381409327673638923&scope=bot&permissions=8', '_blank');">Add Poop Bot To Your Server</button>
   <p>You will have to complete puzzles and tricky games, you could win 250 coins if you are first, or 50 XP if not.<br>This secret has been hidden for a long time. Now you shall reveal it.</p><h5>Disclaimer: Publishing the answer on YouTube or Reddit may be seen as taking the fun out of it so do be careful what you do with it.</h5>
 </div>
 </body>
