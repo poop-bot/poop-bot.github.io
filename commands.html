@@ -9,6 +9,9 @@
 body {
  background: #23272A;
 }
+a {
+  cursor: pointer;
+}
 #top {
   position: fixed;
   top: 0;
@@ -126,6 +129,7 @@ a {
 <br><br><a onclick="command('slowmode')">!slowmode</a> 
 <br><br><a onclick="command('adminlog')">!adminlog</a> 
 <br><br><a onclick="command('ytstats')">!ytstats</a><br><br>
+<br><br><a onclick="command('christian')">!christian</a><br><br>
 </div>
 <div id="commandOverlay" onclick="commandClose()"></div>
 <div id="command"></div>
@@ -147,6 +151,7 @@ a {
     var slowmode = "<h1>!slowmode</h1><p>!slowmode blocks users from sending more than <strong>1 message every 5 seconds</strong>.<br><br>Usage: !slowmode [on/off]";
     var adminlog = "<h1>!adminlog</h1><p>The !adminlog command logs all messages sent & edited. The results are sent to the specified channel.<br><br>Usage: !adminlog &lt;#channel&gt;";
     var ytstats = "<h1>!ytstats</h1><p>!ytstats shows current subscriber and view counts of a YouTube channel. <strong>Must be a channel link</strong>.<br><br>Usage: !ytstats &lt;link&gt;";
+    var christian = "<h1>!christian</h1><p>The !christian command sends a link to join the <strong>Christian Community Server</strong>.<br><br>Usage: !christian";
     function command(cmd) {
       document.getElementById("command").innerHTML = this[cmd] + "</p><h5>Key: &lt;required&gt; [optional]</h5>";
       document.getElementById("command").style.display = "block";
