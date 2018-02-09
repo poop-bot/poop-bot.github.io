@@ -129,7 +129,8 @@ a {
 <br><br><a onclick="command('slowmode')">!slowmode</a> 
 <br><br><a onclick="command('adminlog')">!adminlog</a> 
 <br><br><a onclick="command('ytstats')">!ytstats</a>
-<br><br><a onclick="command('christian')">!christian</a><br><br>
+<br><br><a onclick="command('christian')">!christian</a>
+<br><br><a onclick="command('clear')">!clear</a><br><br>
 </div>
 <div id="commandOverlay" onclick="commandClose()"></div>
 <div id="command"></div>
@@ -152,6 +153,7 @@ a {
     var adminlog = "<h1>!adminlog</h1><p>The !adminlog command logs all messages sent & edited. The results are sent to the specified channel.<br><br>Usage: !adminlog &lt;#channel&gt;";
     var ytstats = "<h1>!ytstats</h1><p>!ytstats shows current subscriber and view counts of a YouTube channel. <strong>Must be a channel link</strong>.<br><br>Usage: !ytstats &lt;link&gt;";
     var christian = "<h1>!christian</h1><p>The !christian command sends a link to join the <strong>Christian Community Server</strong>.<br><br>Usage: !christian";
+    var clear = "<h1>!clear</h1><p>The !clear command clears a specified number of messages.<br><br>Usage: !clear <number of messages>";
     function command(cmd) {
       document.getElementById("command").innerHTML = this[cmd] + "</p><h5>Key: &lt;required&gt; [optional]</h5>";
       document.getElementById("command").style.display = "block";
