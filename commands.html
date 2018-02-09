@@ -63,6 +63,18 @@ a {
   overflow: auto;
   font-size: 12px
 }
+#content2 {
+  width: calc(50vw - 4vh);
+  height: 90vh;
+  position: fixed;
+  top: 10vh;
+  left: calc(2vh + 50vw);
+  background: #23272A;
+  color: #ffffff;
+  font-family: Arial;
+  overflow: auto;
+  font-size: 12px
+}
 a {
   color: #ffffff;
 }
@@ -129,7 +141,12 @@ a {
 <br><br><a onclick="command('adminlog')">!adminlog</a> 
 <br><br><a onclick="command('ytstats')">!ytstats</a>
 <br><br><a onclick="command('christian')">!christian</a>
-<br><br><a onclick="command('clear')">!clear</a><br><br>
+<br><br><a onclick="command('clear')">!clear</a>
+<br><br><a onclick="command('play')">!play</a>
+<br><br><a onclick="command('np')">!np</a>
+<br><br><a onclick="command('queue')">!queue</a>
+<br><br><a onclick="command('clearqueue')">!clearqueue</a>
+<br><br><a onclick="command('remove')">!remove</a><br><br>
 </div>
 <div id="commandOverlay" onclick="commandClose()"></div>
 <div id="command"></div>
@@ -153,6 +170,11 @@ a {
     var ytstats = "<h1>!ytstats</h1><p>!ytstats shows current subscriber and view counts of a YouTube channel. <strong>Must be a channel link</strong>.<br><br>Usage: !ytstats &lt;link&gt;";
     var christian = "<h1>!christian</h1><p>The !christian command sends a link to join the <strong>Christian Community Server</strong>.<br><br>Usage: !christian";
     var clear = "<h1>!clear</h1><p>The !clear command clears a specified number of messages.<br><br>Usage: !clear <number of messages>";
+    var play = "<h1>!play</h1><p>";
+    var np = "<h1>!np</h1><p>";
+    var queue = "<h1>!queue</h1><p>";
+    var clearqueue = "<h1>!clearqueue</h1><p>";
+    var remove = "<h1>!remove</h1><p>";
     function command(cmd) {
       document.getElementById("command").innerHTML = this[cmd] + "</p><h5>Key: &lt;required&gt; [optional]</h5>";
       document.getElementById("command").style.display = "block";
