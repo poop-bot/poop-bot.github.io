@@ -81,7 +81,7 @@ body {
   border: none;
   outline: none;
   position: absolute;
-  top: 65vh;
+  top: 60vh;
   left: 50%;
   transform: translateX(-50%);
   padding-bottom: 1.5vh;
@@ -91,6 +91,29 @@ body {
   border-bottom: 0.5vh solid #7289DA;
 }
 #addBtn:active {
+  background: #7289DA;
+  color: #2C2F33;
+  border-bottom: 0.5vh solid #7289DA;
+}
+#addMusicBtn {
+  font-family: Arial;
+  background: #2C2F33;
+  color: #7289DA;
+  padding: 2vh;
+  font-size: 2.5vh;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 70vh;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 1.5vh;
+  border-bottom: 0.5vh solid #2C2F33;
+}
+#addMusicBtn:hover {
+  border-bottom: 0.5vh solid #7289DA;
+}
+#addMusicBtn:active {
   background: #7289DA;
   color: #2C2F33;
   border-bottom: 0.5vh solid #7289DA;
@@ -106,7 +129,8 @@ body {
 <div id="content">
 <div id="logoCircle"></div>
 <p id="logoText">Poop Bot</p>
-<button id="addBtn" onclick="window.open('https://discordapp.com/oauth2/authorize?client_id=381409327673638923&scope=bot&permissions=8', '_blank');">Add Poop Bot To Your Server</button>
+<button id="addBtn" onclick="window.open('https://discordapp.com/oauth2/authorize?client_id=381409327673638923&permissions=8&scope=bot', '_blank');">Add Poop Bot To Your Server</button>
+<button id="addMusicBtn" onclick="window.open('https://discordapp.com/api/oauth2/authorize?client_id=411251870141513729&permissions=8&scope=bot', '_blank');">Add Poop Bot Music To Your Server</button>
 </div>
 </body>
 </html>
