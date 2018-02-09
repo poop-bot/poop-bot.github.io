@@ -179,8 +179,8 @@ a {
     var play = "<h1>!play</h1><p>Plays a song from YouTube.<br><br>Usage: !play &lt;title&gt;<br><br><strong>Requires Poop Bot FM</strong>";
     var np = "<h1>!np</h1><p>Shows which song is currently playing.<br><br>Usage: !np<br><br><strong>Requires Poop Bot FM</strong>";
     var queue = "<h1>!queue</h1><p>Shows queue of songs.<br><br>Usage: !queue<br><br><strong>Requires Poop Bot FM</strong>";
-    var clearqueue = "<h1>!clearqueue</h1><p>";
-    var remove = "<h1>!remove</h1><p>";
+    var clearqueue = "<h1>!clearqueue</h1><p>Clears queue.<br><br>Usage: !clearqueue<br><br><strong>Requires Poop Bot FM</strong>";
+    var remove = "<h1>!remove</h1><p>Removes a song from the queue.<br><br>Usage: !remove &lt;number of song in queue&gt;<br><br><strong>Requires Poop Bot FM</strong>";
     function command(cmd) {
       document.getElementById("command").innerHTML = this[cmd] + "</p><h5>Key: &lt;required&gt; [optional]</h5>";
       document.getElementById("command").style.display = "block";
