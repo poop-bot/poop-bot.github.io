@@ -184,7 +184,7 @@ a {
     var queue = "<h1>p!queue</h1><p>Shows queue of songs.<br><br>Usage: p!queue<br><br><strong>Requires Poop Bot FM</strong>";
     var clearqueue = "<h1>p!clearqueue</h1><p>Clears queue.<br><br>Usage: p!clearqueue<br><br><strong>Requires Poop Bot FM</strong>";
     var remove = "<h1>p!remove</h1><p>Removes a song from the queue.<br><br>Usage: p!remove &lt;number of song in queue&gt;<br><br><strong>Requires Poop Bot FM</strong>";
-    var setchannel = "<h1>p!serchannel</h1><p>The !setchannel command sets the channel that Poop Bot FM is going to use.<br><br>Usage: p!setchannel &lt;channel name&gt;<br><br><strong>Requires Poop Bot FM</strong>";
+    var setchannel = "<h1>p!setchannel</h1><p>The !setchannel command sets the channel that Poop Bot FM is going to use. <strong>Must be an existing voice channel</strong><br><br>Usage: p!setchannel &lt;channel name&gt;<br><br><strong>Requires Poop Bot FM</strong>";
     function command(cmd) {
       document.getElementById("command").innerHTML = this[cmd] + "</p><h5>Key: &lt;required&gt; [optional]</h5>";
       document.getElementById("command").style.display = "block";
