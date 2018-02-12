@@ -1,0 +1,93 @@
+<html>
+<head>
+<link rel="shortcut icon" href="logonobg.png">
+<title>Poop Bot | Commands</title>
+<style>
+* {
+  font-family: Arial;
+}
+body {
+ background: #23272A;
+ margin: 0;
+}
+a {
+  cursor: pointer;
+}
+#top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 10vh;
+  background: #2C2F33;
+  z-index: 9;
+}
+.top-link {
+  position: absolute;
+  top: 0;
+  height: 6vh;
+  color: #ffffff;
+  padding-top: 3.5vh;
+  font-size: 3vh;
+  text-align: center;
+  font-family: Arial;
+  text-decoration: none;
+}
+.top-link.first {
+  left: 0;
+  width: 15vh;
+}
+.top-link.second {
+  left: 15vh;
+  width: 15vh;
+}
+.top-link.third {
+  left: 30vh;
+  width: 20vh;
+}
+.top-link.fourth {
+  left: 50vh;
+  width: 20vh;
+}
+.top-link:hover {
+  background: #23272A;
+  border-bottom: 0.5vh solid #23272A;
+}
+.top-link.active {
+  border-bottom: 0.5vh solid #7289DA;
+}
+#contentblock {
+  width: 10vw;
+  height:10vh;
+}
+#content {
+  position: absolute;
+  top: 10vh;
+  left: 2vh;
+  width: calc(100vw - 4vh);
+  background: #23272A;
+  color: #ffffff;
+  font-family: Arial;
+}
+a {
+  color: #ffffff;
+}
+#content > a {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<div id="top">
+  <a href="./" class="top-link first">Home</a>
+  <a href="about" class="top-link second">About</a>
+  <a href="commands" class="top-link third">Commands</a>
+  <a href="commands" class="top-link fourth active">Changelog</a>
+</div>
+  <div id="contentblock"></div>
+<div id="content">
+  <h1>Feb 12th 2018 - Changelog, Woo!</h1>
+  <p>Today we added the changelog so you can keep track of what is new and what isn't!<br>Isn't that lovely?<br><br> - BarnMS</p>
+ </div>
+</body>
+</html>
