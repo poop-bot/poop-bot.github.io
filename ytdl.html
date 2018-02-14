@@ -45,6 +45,22 @@ a {
 #agree:active {
   opacity: 0.7;
 }
+#disagree {
+  color: #ffffff;
+  background: #99AAB5;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+#disagree:hover {
+  opacity: 0.9;
+}
+#disagree:active {
+  opacity: 0.7;
+}
 </style>
 </head>
 <body>
@@ -52,6 +68,7 @@ a {
   <h1>Conditions of Fair Use</h1>
   <p>You Must Not Breach <a href="https://www.youtube.com/intl/en-GB/yt/about/copyright/fair-use/">YouTube's Fair Use</a> and if you do it is your fault, we will not take any of the blame<br></p>
   <button id="agree" onclick="location.href = getParameterByName('url')">I Agree</button>
+  <button id="disagree" onclick="window.colse()">I Agree</button>
 </div>
 <script> 
 function getParameterByName(name, url) {
