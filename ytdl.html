@@ -38,6 +38,7 @@ a {
   outline: none;
   font-size: 16px;
   transition: 0.3s;
+  margin-right: 16px;
 }
 #agree:hover {
   opacity: 0.9;
@@ -68,7 +69,7 @@ a {
   <h1>Conditions of Fair Use</h1>
   <p>You Must Not Breach <a href="https://www.youtube.com/intl/en-GB/yt/about/copyright/fair-use/">YouTube's Fair Use</a> and if you do it is your fault, we will not take any of the blame<br></p>
   <button id="agree" onclick="location.href = getParameterByName('url')">I Agree</button>
-  <button id="disagree" onclick="window.colse()">Cancel</button>
+  <button id="disagree" onclick="window.close()">Cancel</button>
 </div>
 <script> 
 function getParameterByName(name, url) {
