@@ -1,1 +1,52 @@
+<html>
+<head>
+<link rel="shortcut icon" href="logonobg.png">
+<title>Poop Bot | YTDL</title>
+<style>
+* {
+  font-family: Arial;
+}
+body {
+ background: #23272A;
+ margin: 0;
+}
+a {
+  cursor: pointer;
+}
 
+#content {
+  position: absolute;
+  top: 50vh;
+  left: 50vh;
+  transform: translate(-50%,-50%);
+  background: #23272A;
+  color: #ffffff;
+  font-family: Arial;
+}
+a {
+  color: #ffffff;
+}
+#content > a {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<div id="content">
+  <h1>Conditions of Fair Use</h1>
+  <p>You Must Not Breach <a href="https://www.youtube.com/intl/en-GB/yt/about/copyright/fair-use/">YouTube's Fair Use</a> and if you do it is your fault, we will not take any of the blame<br></p>
+  <button id="agree" onclick="location.href = getParameterByName('url')">I Agree</button>
+</div>
+<script> 
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+</script>
+</body>
+</html>
