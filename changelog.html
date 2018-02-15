@@ -82,6 +82,92 @@ a {
 </style>
 </head>
 <body>
+<style>
+#topPortrait {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 10vh;
+  background: #2C2F33;
+  z-index: 9;
+  display: none;
+}
+#menu {
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  z-index: 100;
+  background: #2C2F33;
+  width: 100vw;
+  height: 100vh;
+  transition: left 0.3s;
+}
+#menuBtn {
+  color: white;
+  font-size: 5vh;
+  position: absolute;
+  top: 5vh;
+  left: 5vh;
+  transform: translate(-50%, -50%);
+}
+#menuClose {
+  color: white;
+  position: absolute;
+  top: 5vh;
+  right: 5vh;
+  transform: translate(50%, -50%);
+  z-index: 2;
+  font-size: 5vh;
+}
+.menu-link {
+  display: block;
+  height: 8vh;
+  width: 95vw;
+  color: #ffffff;
+  padding-top: 5vh;
+  padding-left: 5vw;
+  font-size: 3vh;
+  text-align: left;
+  font-family: Arial;
+  text-decoration: none;
+}
+.menu-link:hover {
+  background: #23272A;
+}
+.menu-link.active {
+  background: #7289DA;
+}
+</style>
+<div id="topPortrait">
+  <i id="menuBtn" onclick="openMenu()" class="material-icons">menu</i>
+</div>
+<div id="menu">
+  <i id="menuClose" onclick="closeMenu();" class="material-icons">close</i>
+  <a href="./" class="menu-link first">Home</a><br>
+  <a href="about" class="menu-link second">About</a><br>
+  <a href="commands" class="menu-link third active">Commands</a><br>
+  <a href="changelog" class="menu-link fourth">Changelog</a><br>
+  <a href="https://poop-bot-status.glitch.me/" class="menu-link fifth">Status</a>
+</div>
+<script>
+  function openMenu() {
+      document.getElementById('menu').style.left = 0;
+    }
+    function closeMenu() {
+      document.getElementById('menu').style.left = "-100vw";
+    }
+    setInterval(function() {
+    if(window.innerWidth < window.innerHeight*0.85) {
+      document.getElementById('top').style.display = "none";
+      document.getElementById('topPortrait').style.display = "block";
+    } else {
+      document.getElementById('top').style.display = "block";
+      document.getElementById('topPortrait').style.display = "none";
+      closeMenu();
+    }
+    },0);
+</script>
 <div id="top">
   <a href="./" class="top-link first">Home</a>
   <a href="about" class="top-link second">About</a>
