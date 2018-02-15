@@ -213,8 +213,10 @@ a {
       document.getElementById("commandOverlay").style.display = "none";
     }
     setInterval(function() {
-    if(window.innerWidth < window.innerHeight) {
-      document.getElementById('top').innerHTML = "";
+    if(window.innerWidth < window.innerHeight*0.85) {
+      document.getElementById('top').style.display = "none";
+    } else {
+      document.getElementById('top').style.display = "block";
     }
     },0);
   </script>
