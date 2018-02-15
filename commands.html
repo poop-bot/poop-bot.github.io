@@ -13,6 +13,16 @@ body {
 a {
   cursor: pointer;
 }
+#topPortrait {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 10vh;
+  background: #2C2F33;
+  z-index: 9;
+  display: none;
+}
 #top {
   position: fixed;
   top: 0;
@@ -126,6 +136,9 @@ a {
 </style>
 </head>
 <body>
+<div id="topPortrait">
+  
+</div>
 <div id="top">
   <a href="./" class="top-link first">Home</a>
   <a href="about" class="top-link second">About</a>
@@ -215,8 +228,10 @@ a {
     setInterval(function() {
     if(window.innerWidth < window.innerHeight*0.85) {
       document.getElementById('top').style.display = "none";
+      document.getElementById('topPortrait').style.display = "block";
     } else {
       document.getElementById('top').style.display = "block";
+      document.getElementById('topPortrait').style.display = "none";
     }
     },0);
   </script>
