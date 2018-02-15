@@ -195,6 +195,24 @@ a {
   <a href="changelog" class="menu-link fourth">Changelog</a><br>
   <a href="https://poop-bot-status.glitch.me/" class="menu-link fifth">Status</a>
 </div>
+<script>
+  function openMenu() {
+      document.getElementById('menu').style.left = 0;
+    }
+    function closeMenu() {
+      document.getElementById('menu').style.left = "-100vw";
+    }
+    setInterval(function() {
+    if(window.innerWidth < window.innerHeight*0.85) {
+      document.getElementById('top').style.display = "none";
+      document.getElementById('topPortrait').style.display = "block";
+    } else {
+      document.getElementById('top').style.display = "block";
+      document.getElementById('topPortrait').style.display = "none";
+      closeMenu();
+    }
+    },0);
+</script>
 <div id="top">
   <a href="./" class="top-link first">Home</a>
   <a href="about" class="top-link second">About</a>
@@ -281,22 +299,6 @@ a {
       document.getElementById("command").style.display = "none";
       document.getElementById("commandOverlay").style.display = "none";
     }
-    function openMenu() {
-      document.getElementById('menu').style.left = 0;
-    }
-    function closeMenu() {
-      document.getElementById('menu').style.left = "-100vw";
-    }
-    setInterval(function() {
-    if(window.innerWidth < window.innerHeight*0.85) {
-      document.getElementById('top').style.display = "none";
-      document.getElementById('topPortrait').style.display = "block";
-    } else {
-      document.getElementById('top').style.display = "block";
-      document.getElementById('topPortrait').style.display = "none";
-      closeMenu();
-    }
-    },0);
   </script>
 </body>
 </html>
