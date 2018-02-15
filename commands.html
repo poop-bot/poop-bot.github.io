@@ -32,6 +32,32 @@ a {
   background: #2C2F33;
   z-index: 9;
 }
+#menu {
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  background: #2C2F33;
+  width: 100vw;
+  height: 100vh;
+}
+.menu-link {
+  height: 6vh;
+  width: 95v%;
+  color: #ffffff;
+  padding-top: 3.5vh;
+  padding-left: 5%;
+  font-size: 3vh;
+  text-align: left;
+  font-family: Arial;
+  text-decoration: none;
+}
+.menu-link:hover {
+  background: #23272A;
+  border-bottom: 0.5vh solid #23272A;
+}
+.menu-link.active {
+  border-bottom: 0.5vh solid #7289DA;
+}
 .top-link {
   position: absolute;
   top: 0;
@@ -137,7 +163,14 @@ a {
 </head>
 <body>
 <div id="topPortrait">
-  
+  <button id="menuBtn" onclick="openMenu()">Menu</button>
+</div>
+<div id="menu">
+ <a href="./" class="menu-link first">Home</a>
+  <a href="about" class="menu-link second">About</a>
+  <a href="commands" class="menu-link third active">Commands</a>
+  <a href="changelog" class="menu-link fourth">Changelog</a>
+  <a href="https://poop-bot-status.glitch.me/" class="menu-link fifth">Status</a>
 </div>
 <div id="top">
   <a href="./" class="top-link first">Home</a>
@@ -224,6 +257,9 @@ a {
     function commandClose() {
       document.getElementById("command").style.display = "none";
       document.getElementById("commandOverlay").style.display = "none";
+    }
+    function openMenu() {
+      document.getElementById('menu').style.left = 0;
     }
     setInterval(function() {
     if(window.innerWidth < window.innerHeight*0.85) {
