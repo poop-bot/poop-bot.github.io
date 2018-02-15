@@ -43,6 +43,14 @@ a {
   height: 100vh;
   transition: left 0.3s;
 }
+#menuBtn {
+  color: white;
+  font-size: 5vh;
+  position: absolute;
+  top: 5vh;
+  left: 5vh;
+  transform: translate(-50%, -50%);
+}
 #menuClose {
   color: white;
   position: absolute;
@@ -174,7 +182,7 @@ a {
 </head>
 <body>
 <div id="topPortrait">
-  <button id="menuBtn" onclick="openMenu()">Menu</button>
+  <i id="menuBtn" onclick="openMenu()" class="material-icons">menu</i>
 </div>
 <div id="menu">
   <i id="menuClose" onclick="closeMenu();" class="material-icons">close</i>
