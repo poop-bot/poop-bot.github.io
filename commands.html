@@ -42,6 +42,12 @@ a {
   height: 100vh;
   transition: left 0.3s;
 }
+#menuClose {
+  position: absolute;
+  top: 1vh;
+  right: 1vh;
+  z-index: 2;
+}
 .menu-link {
   display: block;
   height: 8vh;
@@ -168,7 +174,7 @@ a {
   <button id="menuBtn" onclick="openMenu()">Menu</button>
 </div>
 <div id="menu">
-  <a id="menuClose" onclick="closeMenu">X</a>
+  <a id="menuClose" onclick="closeMenu();">X</a>
   <a href="./" class="menu-link first">Home</a><br>
   <a href="about" class="menu-link second">About</a><br>
   <a href="commands" class="menu-link third active">Commands</a><br>
