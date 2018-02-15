@@ -212,9 +212,11 @@ a {
       document.getElementById("command").style.display = "none";
       document.getElementById("commandOverlay").style.display = "none";
     }
+    setInterval(function() {
     if(window.innerWidth < window.innerHeight) {
-      document.getEelementById('top').innerHTML = "";
+      document.getElementById('top').innerHTML = "";
     }
+    },0);
   </script>
 </body>
 </html>
