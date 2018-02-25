@@ -155,9 +155,13 @@ a {
     if(window.innerWidth < window.innerHeight*0.85) {
       document.getElementById('top').style.display = "none";
       document.getElementById('topPortrait').style.display = "block";
+      document.getElementById('anim').style.display = "none";
+      document.getElementById('content').style.width = "calc(100vw - 4vh)";
     } else {
       document.getElementById('top').style.display = "block";
       document.getElementById('topPortrait').style.display = "none";
+      document.getElementById('anim').style.display = "block";
+      document.getElementById('content').style.width = "calc(75vw - 4vh)";
       closeMenu();
     }
     },0);
@@ -193,7 +197,7 @@ a {
 </a>
 </div>
 </div>
-<video loop autoplay style="height: 75vh; border-radius: 1vh; position: fixed; top: 55%; left: 100vw; transform: translate(-25vw, -50%);">
+<video loop autoplay id="anim" style="height: 75vh; border-radius: 1vh; position: fixed; top: 55%; left: 100vw; transform: translate(-25vw, -50%);">
   <source src="https://poop-bot.github.io/rpsAnim.mp4" type="video/mp4">
 </video>
 </body>
